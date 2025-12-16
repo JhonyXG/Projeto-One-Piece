@@ -5,30 +5,31 @@
     }
 
     main .personagem .imagem {
-        height: 85%;
+        max-width: 100%;
+        height: auto;
     }
 
     .conteúdo {
         justify-content: flex-end;
         left: 0;
-        top: -20%;
+        top: -10%;
         max-width: 100vw;
-        padding: 30px;
+        padding: 5vw;
     }
 
     .conteúdo .nome-personagem {
-        font-size: 36px;
+        font-size: clamp(20px, 4vw, 36px);
     }
 
     .conteúdo .descricao {
-        max-width: 500px;
+        max-width: 90%;
     }
 
     .botoes {
         flex-direction: row;
         align-items: flex-end;
         width: 100%;
-        padding: 30px;
+        padding: 5vw;
     }
 
     .botoes .botao img {
@@ -38,25 +39,27 @@
 
 @media (max-width: 425px) {
     main .personagem .imagem {
+        max-width: 100%;
         height: auto;
     }
 
     .conteúdo .logo {
-        width: 170px;
-        height: 75px;
+        width: 150px;
+        height: auto;
     }
 
     .conteúdo {
-        top: -30px;
+        top: -20px;
+        padding: 4vw;
     }
 
     .conteúdo .nome-personagem {
-        font-size: 24px;
+        font-size: clamp(18px, 5vw, 24px);
     }
 
     .botoes {
-        padding: 20px;
-        top: -20px;
+        padding: 4vw;
+        top: -10px;
     }
 
     .botoes .botao img {
